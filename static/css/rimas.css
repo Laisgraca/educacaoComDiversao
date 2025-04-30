@@ -1,36 +1,54 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: "DynaPuff", system-ui;
     background: url('../image/fundo10.jpg') no-repeat center center fixed;
     background-size: cover;
-    display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 25px;
     flex-direction: column;
 }
+
+
+/*site responsivo*/
+.body {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 768px){
+      .body{
+          width:100%;
+          flex-direction: column;
+          background: url('../image/fundo10.jpg')no-repeat center center fixed;
+          background-size: cover;
+               }
+  }
+  
+
 
 .game-container {
     text-align: center;
     background: rgba(255, 255, 255, 0.1); /*ajuste da opacidade*/
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     width: 80%;
 }
 
 h1 {
-    color: #ff6347;
+    color: #FF4500;
     font-size: 2.5em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #aaa;
+    text-shadow: 1px 2px 5px #fffefe;
 }
 
 #instruction {
-    font-size: 1.5em;
-    color: #4682b4;
+    font-size: 1.6em;
+    font-family: "DynaPuff", system-ui;
+    color: #B03060;
     margin-bottom: 20px;
-}
+    text-shadow: 1px 1px 8px #fffefe;}
+    
 
 button {
     padding: 10px 20px;
@@ -45,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(200, 100, 255, 0.3); /*ajuste da opacidade*/
+    background-color: rgba(124, 28, 175, 0.397); /*ajuste da opacidade*/
     transform: scale(1.1);
 }
 
@@ -83,15 +101,16 @@ button:hover {
 #feedback {
     margin-top: 20px;
     font-size: 1.5em;
-    color: #32cd32;
-    text-shadow: 1px 1px 2px #aaa;
+    color:  #05d605;
+    text-shadow: 1px 2px 4px #ffffff;
 }
 
 #score {
     margin-top: 20px;
-    font-size: 1.5em;
-    color: #4682b4;
-    text-shadow: 1px 1px 2px #aaa;
+    font-size: 1.4em;
+    color: #156db6;
+    text-align: center;
+    text-shadow: 1px 1px 10px #fefeff;
 }
 
 .popup {
@@ -117,14 +136,14 @@ button:hover {
 .popup-content h2 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: #ff6347;
+    color: #FF4500;
     text-shadow: 2px 2px 4px #aaa;
 }
 
 .popup-content button {
     padding: 15px 30px;
     margin: 10px;
-    background-color: #4caf50;
+    background-color: #7600ad;
     color: white;
     border: none;
     border-radius: 10px;
@@ -134,7 +153,7 @@ button:hover {
 }
 
 .popup-content button:hover {
-    background-color: #45a049;
+    background-color: #19106d;
     transform: scale(1.1);
 }
 
@@ -159,15 +178,18 @@ button:hover {
 }
 
 .menu-button {
-    width: 200px;
-    height: 80px;
-    margin: 10px 0;
+    width: 210px;
+    height: 100px;
+    margin: 1px 2px 10px;
+    position: relative;
+    top: 75px;
     opacity: 2;
     padding: 15px;
     font-size: 18px;
+    font-family: "DynaPuff", system-ui;
     border: none;
     border-radius: 10px;
-    background-color: #FF6347;
+    background-color: #FF4500;
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -175,4 +197,5 @@ button:hover {
 
 .menu-button:hover {
     transform: scale(1.1);
+    background-color: #9932CC;
 }
